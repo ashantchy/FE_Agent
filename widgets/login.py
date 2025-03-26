@@ -1,8 +1,22 @@
 import streamlit as st
 
+st.markdown(
+    '''
+    <style>
+    .st-emotion-cache-b95f0i {
+        display: flex;
+        flex-direction: column;
+        padding: 5px 1px;
+        margin-bottom: 10px;
+}
+    </style>
+    ''',unsafe_allow_html=True
+)
 # Hardcoded credentials
 VALID_USERNAME = "user123"
 VALID_PASSWORD = "password123"
+
+
 
 def login():
     

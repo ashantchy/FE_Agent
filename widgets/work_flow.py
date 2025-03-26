@@ -13,7 +13,7 @@ def workflow_widget():
     ]
    
     # UI for the workflow animation
-    st.subtitle("Workflow Animation", anchor=False)
+    st.subheader("Workflow Animation", anchor=False)
  
     # Layout for the steps (with added empty row and vertical line in the 3rd column of the second row)
     layout = [

@@ -172,7 +172,7 @@ else:
                         with st.chat_message("user"):
                             st.write(exchange["request"])
                         with st.chat_message("assistant"):
-                            st.write(exchange["response"])
+                            st.write_stream(exchange["response"])
 
             # --- INPUT AREA (user message and assistant response) ---
             if st.session_state.show_input:
@@ -209,6 +209,7 @@ else:
             
             # --- CREATING CARDS ---
             workflow_widget()
+
             # Read the CSV file into a DataFrame
             df = pd.read_csv(file_path)
 
